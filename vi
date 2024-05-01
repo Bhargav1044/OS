@@ -1,0 +1,87 @@
+//1.displaying system information
+#!/bin/bash
+
+# Display current shell
+echo "Current shell: $SHELL"
+
+# Display home directory
+echo "Home directory: $HOME"
+
+# Display operating system type
+echo "Operating system type: $(uname -s)"
+
+# Display current working directory
+echo "Current working directory: $(pwd)"
+
+
+
+
+
+//2.numbers between 1 to 100
+#!/bin/bash
+
+# Loop through numbers 1 to 100
+for ((i=1; i<=100; i++)); do
+    # Check if the number is even
+    if (( $i % 2 == 0 )); then
+        echo "$i"
+    fi
+done
+
+
+
+//3.even or odd
+#!/bin/bash
+
+# Prompt user to enter a number
+echo "Enter a number:"
+read number
+
+# Check if the number is divisible by 2
+if [ $((number % 2)) -eq 0 ]; then
+    echo "$number is even"
+else
+    echo "$number is odd"
+fi
+
+
+
+
+
+//4.addition of 2 nos.
+#!/bin/bash
+
+# Prompt user to enter the first number
+echo "Enter the first number:"
+read num1
+
+# Prompt user to enter the second number
+echo "Enter the second number:"
+read num2
+
+# Perform addition
+sum=$((num1 + num2))
+
+# Display the result
+echo "The addition of $num1 and $num2 is: $sum"
+
+
+
+
+
+//5.date and time
+#!/bin/bash
+
+# Display today's date
+echo "Today's date: $(date)"
+
+# Display last 3 months calendar
+echo "Last 3 months calendar:"
+cal -3
+
+# Display current working directory
+echo "Current working directory: $(pwd)"
+
+# Display current shell
+echo "Current shell: $SHELL"
+
